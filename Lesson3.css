@@ -1,0 +1,42 @@
+#fsu-seal {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: 20px;
+    left: 50%;
+    z-index: 50;
+    margin-left: -34px;
+}
+#btnStyle{
+    background-color:#782f40;
+    color: #fff;
+}
+.style1 {
+    background-color: #782f40;
+    color: #fff;
+}
+.style2{
+    height: 40px;
+    width: 100%;
+}
+/* h1{
+    color: #0000ff;
+} */
+.btn{
+    height: 32px;
+    width: 100px;
+}
+table {
+    border-collapse: collapse;
+  }
+table, th, td {
+    border: #000 1px solid;
+    vertical-align: top;
+    padding: 5px;
+}
+table th {
+    background-color: #cccccc;
+}
+select {
+    width: 200px;
+}

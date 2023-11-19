@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- Create By: Will Dunham -->
+<html>
+    <head>
+        <title>Lesson 3 html</title>
+        <link href="Lesson3.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <div style="background-color: #782f40; padding: 10px; height: 27px; color: #fff;">
+                FLORIDA STATE UNIVERSITY
+            </div>
+            <div style="height: 30px;">
+                <a href=""><img src="https://cas.fsu.edu/cas/images/fsu-seal-3d-160x160.png" id="fsu-seal"
+                    alt="Florida State Logo" style="position: 375 -34 341 -33" /></a>
+            </div>
+        </header>
+        <p>
+            <h1>HTML</h1>
+        </p>
+        <hr>
+        <p><a href="#target">Go To Target Section</a>
+            <table>
+                <CAPTION ALIGN=“BOTTOM”>Notes for HTML</CAPTION>
+                <tr>
+                    <th>Elements</th>
+                    <th>Element Attributes</th>
+                    <th>Text Formatting Tags</th>
+                    <th>Escape Sequence</th>
+                    <th>Extra column</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        <div>SYNTAX  &lt;tagname&gt;&lt;/tagname&gt; </div>
+                        <div>Some tags can be self closing ie:  &lt;br /&gt;</div>
+                        <div>html - this is the root</div>
+                        <div>head</div>
+                            <blockquote>
+                                <div>title</div>
+                                <div>meta</div>
+                            </blockquote>
+                        <div>body</div>
+                            br (line return, carriage return, hard break)<br>
+                            hr (draw a line across the page)<br>
+                            Block containers
+                            <blockquote>
+                                div (container)
+                                p (paragraph also a container)
+                                ol (ordered list, numbered)
+                                ul (unordered list)
+                                li (nested in ol or ul)
+                                blockquote (tabs containted content)
+                                table
+                            </blockquote>
+                            Inline elements
+                            span
+                            a
+                    </td>
+                    <td>
+                        <ul>
+                            <li>id: unique identifier, it should be unique in the docoment</li>
+                            <li>class: assigns class from style to format contained content</li>
+                            <li>style: inline assignment of formatting for contained content</li>
+                        </ul>
+                    </td>
+                    <td> 
+                        <h1>h1</h1></div><br>
+                        <h2>h2</h1></div><br>
+                        <h3>h3</h1></div><br>
+                        <b>b</b> (bold)<br>
+                        <strong>strong</strong> (bold)<br>
+                        <i>i</i> (italics)<br>
+                        <em>em</em> (emphasis)<br>
+                        <u>u</u> (underline)
+                    </td>
+                    <td colspan="2">
+                        <ol>
+                            <li>For &: &amp;amp;</li>
+                            <li>For <: &amp;lt;</li>
+                            <li>For >: &amp;gt;</li>
+                        </ol>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        &lt;td&gt; attributes: colspan, rowspan
+                    </td>
+                    <td>
+                        Images
+                        <img src="https://cas.fsu.edu/cas/images/fsu-seal-3d-160x160.png" id="fsu-seal2" alt="Florida State Logo" height="68px;" width="68px;" />
+                    </td>
+                    <td>
+                        Ordered Lists<br>
+                        <ol type="A">
+                            <li>My first item</li>
+                            <li>My second item</li>
+                        </ol>
+                        type attribute = 1|A|a|i
+                    </td>
+                    <td>
+                        Anchor
+                        External: <a href="http:www.yorku.ca" target="_blank">York University</a><br>
+                        Local: <a href="#footer">Go To Bottom</a> scrolls to an anchor element with the name="footer"
+                        anchor attribute target(_blank = open link in a new browser or tab), the default is _self
+                    </td>
+                </tr>
+            </table>
+        </p>
+        <div>
+            Keyboard shortcuts<br>
+            Cntl-c copy<br>
+            Cntl-v past<br>
+            Cntl-z undo<br>
+            Cntl-s save<br>
+        </div><br>
+        <a name="footer">Bottom of page</a>
+    </body>
+</html>
+
+

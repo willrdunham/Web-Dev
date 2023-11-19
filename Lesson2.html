@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <style>
+            .spanColor {
+                background-color: #00ff00;
+            }
+        </style>
+        <link href="site.css" type="text/css" rel="stylesheet" />
+        
+        <!--keyboard shortcuts
+            ctrl - s - save
+            ctrl - c - copy
+            ctrl - v - paste
+            ctrl - z - undo
+        -->
+        
+        
+        <script>
+            // SYNTAX function <functionname> () { }
+            function updateStyle(){
+                let btn = document.getElementById("span1");
+                btn.classList.add("style1");
+            }
+            
+            function revertStyle(){
+                let btn = document.getElementById("span1");
+                btn.classList.remove("style1");
+            }
+        </script>
+    </head>
+    <body>
+        <div style="background-color: #7c3546; height:27; padding:10px;"></div>
+        <div style="height:70px;">
+            <img id="fsu-seal" src="https://www.fsu.edu/_/s3.3/img/fsu-seals/fsu-seal-3d-160x160.png">
+        </div>
+        
+        <!--padding
+            add space to insterior of element
+        -->
+        
+        <!--margin
+        add space to outside of element
+        -->
+        
+        <!-- SYNTAX of an element
+            <element id="" class="" style=""></element>
+            id - unique identifier for the element 
+            class - stylesheet classes applied to the element .
+            style - style setting (key value)
+        -->
+        <h1>Hello World!</h1>
+        <h2>This is me</h2>
+        <h3>How are you?</h3>
+        <i>This is an italic</i><br>
+        <em>This is also italics</em><br>
+        <b>This is bold</b><br>
+        <strong>This is also bold</strong>
+        
+        <!-- clorors
+            hexidecimal - start with #, 6 digits, 0-9a-f
+        
+            style precedence
+            1. inline
+            2. css
+        -->
+        
+        <!--div is a block element-->
+        <div class="divColor">How long is this element?</div>
+        <!--span is an inline element-->
+        <span id="span1" class="spanColor">How long is this element?</span>
+        <br><br>
+        
+        <button id="btnStyle" type="button" onclick="updateStyle()">Update</button>
+        <button id="btnRevert" type="button" onclick="revertStyle()">Revert</button>
+    </body> 
+</html>

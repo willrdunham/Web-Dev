@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="../css/site.css" type="text/css" rel="stylesheet" />
+        <title>Lesson 5 Html</title>
+
+        <style type="text/css">
+            .td_bk{
+                background-color: lightgreen;
+            }
+            .div-inline-block {
+                display: inline-block;
+                margin: 10px;
+                background-color: yellow;
+            }
+
+            .li-overline{
+                text-decoration: overline;
+            }
+        </style>
+
+    </head>
+    <body>
+        <header>
+            <div height="27px" style="background-color: #782f40; padding: 10px; height: 27px; color: #fff;">
+                FLORIDA STATE UNIVERSITY
+            </div>
+            <div style="height: 70px;">
+                <a href=""><img src="https://cas.fsu.edu/cas/images/fsu-seal-3d-160x160.png" id="fsu-seal"
+                    alt="Florida State Logo" /></a>
+            </div>
+            <nav>
+                <a href="Lesson3.html">HTML</a>
+                <a href="Lesson4.html">Forms and Widgets</a>
+                <a href="Lesson5.html" class="selected">Styles</a>
+                <a href="Lesson6.html">Javascript</a>
+                <a href="Lesson6P2.html">Operators</a>
+                <a href="Lesson6P3.html">Loops</a>
+                <a href="Lesson7P1.html">DOM</a>
+                <a href="Lesson7P3.html">JSON</a>
+                <a href="Lesson7P4.html">AJAX</a>
+                <a href="Lesson8.html">jQuery</a>
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <table>
+                <tr>
+                    <th>Applying CSS</th>
+                    <th>Selectors</th>
+                    <th>Specificity</th>
+                    <th>Colors</th>
+                </tr>
+                <tr>
+                    <td style="background-color: #ffcc00;">
+                        <ol>
+                            <li>Inline: In the start of an element</li>
+                            &lt;div style="margin:10px;"...&gt;<br><br>
+                            <li>Embedded: In css is in the head tag</li>
+                            <li>External: imported in the head tag</li>
+                        </ol>
+                    </td>
+                    <td id="td2" class="td_bk" ">
+                        <ol type="i">
+                            <li>Element selector: div, table, main - element names</li>
+                            div { margin-top: 10px; }<br><br>
+                            <li>Id selector using # (in the start tag)</li>
+                            #td2 { font-size: 2em; }<br><br>
+                            <li>Class selector using .</li>
+                            .divClass { color: green; }<br><br>
+                            <li>Descendent selector</li>
+                            div .liStyle { color: green; }<br><br>
+                            <li>Pseudo class selector</li>
+                            :hover { color: blue; }
+                            <li>Attribute selector</li>
+                            a[target=_blank] { color: red; text-size: 2em;}
+                        </ol>
+                    </td>
+                    <td>
+                        <ul>
+                            <li>Inline style take precedence over embedded styles</li>
+                            <li>Embedded style take precedence over css</li>
+                            <li><b>EXCEPTION !important keyword</b></li>
+                        </ul>
+                    </td>
+                    <td style="background-color: lightblue;">
+                        <ul>
+                            <li>RGB (red, green, blud)</li>
+                            values 0 - 255, 0 is black, 255 is white (highest intensity)<br>
+                            <li>hexidecimal</li>
+                            start with #, 6 digit alphanumeric value<br>
+                            0-9a-f - 16 possible values<br>
+                            #000000 is black<br> - #000; shortcuts
+                            #ffffff is white<br> - #fff;
+                            <li>Color names</li>
+                            140 names, most IDES will show in intellisense<br>
+                            <div style="background-color: rgb(31, 142, 241);">My rgb example</div>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Box Model</th>
+                    <th>Display</th>
+                    <th>Float and Clear</th>
+                    <th>Font and Text</th>
+                </tr>
+                <tr>
+                    <td>
+                        Content: text and images<br>
+                        <div style="padding: 10px;">Padding: transparent whitespace around the content</div>
+                        <div style="border: solid #000 1px;">Border: contains the padding and the content</div>
+                        <div style="margin: 10px; padding:10px; border:rgb(0,0,0) solid 1px;">Margin: transparent whitespace around the border</div>
+                    </td>
+                    <td>
+                        Display controls elements layout.
+                        <div style="display:inline;">inline - displays as an inline element like span or a</div>
+                        <div style="display:block;">block - displays as a block element like p, table, or div</div>
+                        <div class="div-inline-block">inline-block displays</div> as block inline with text
+                    </td>
+                    <td>
+                        <div style="float: right;">
+                            Float specified have elements align within their parent
+                            <ul>
+                                <li>left - parent's left side</li>
+                                <li>right - parent's right side</li>
+                                <li>none - default</li>
+                            </ul>
+                        </div>
+                        <div>
+                            Clear stops elements from floating
+                            <ul>
+                                <li>both - no elements will float</li>
+                                <li>clear left - no elements float to parent's left</li>
+                                <li>clear right- no elements float to parent's right</li>
+                            </ul>
+                        </div>  
+                    </td>
+                    <td>
+                        <ol>
+                            <li style="font-family: 'Times New Roman', Times, serif;">font-family: Arial, Calibri, Times New Roman</li>
+                            <li style="font-size: larger;">font-size: 100%, small, 10px, 10pt</li>
+                            <li style="font-style: italic;">font-style: <em>normal</em>, <i>italic</i></li>
+                            <li style="font-weight: bold;">font-weight: normal, <b>bold</b>, semibold</li>
+                        </ol>
+                        <ol type="A">
+                            <li style="text-align: left;">text-align: horizontal alignment, left</li>
+                            <li style="text-align: right;">text-align: right</li>
+                            <li style="text-align: center;">text-align: center</li>
+                        </ol>
+                        <ol type="a">
+                            <li class="li-overline">text decoration: overline</li>
+                            <li class="li-underline">text decoration: underline</li>
+                        </ol>
+                        <ol type="i">
+                            <li style="text-transform: uppercase;">text-transform: Upper Case</li>
+                            <li style="text-transform: lowercase;">text-transform: Lower Case</li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </main>
+    </body>
+</html>

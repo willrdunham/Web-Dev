@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+}
+
+nav, main {
+    margin-left: 10px;
+}
+
+.textFormat {
+    background-color: #ff0000;
+    color: #fff;
+}
+#divText2    {
+    background-color: #00ff00;
+    color: #fff;
+}
+span {
+    background-color: #0000ff;
+    color: #fff;
+}
+#fsu-seal {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    top: 20px;
+    left: 50%;
+    z-index: 50;
+    margin-left: -34px;
+}
+
+.img_class{
+    width: 68px;
+    height: 68px;
+}
+
+.fsuRow {
+    background-color: #7c3546;
+    color: #0000ff;
+}
+
+.style1 {
+    background-color: #7c3546;
+    font-size: 14pt;
+}
+
+table { 
+    border-collapse: collapse; 
+}
+
+table th {
+    background-color: #bbbbbb;
+}
+
+table, th, td {
+    border: #000 1px solid; 
+} 
+
+nav a {
+    color: #000;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    border: #000 1px solid;
+    padding: 8px;
+}
+
+
+/* when mouse enters element */
+/*  some comment */
+nav a:hover {
+    background-color: #dddddd;
+    color: #000;
+}
+
+nav a.selected {
+    color: #ffffff;
+    background-color: #0000ff;
+}
+
+.li-underline{
+    text-decoration:underline;
+}
